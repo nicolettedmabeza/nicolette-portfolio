@@ -67,8 +67,8 @@ const Landing = ({ setSelectedPage }) => {
                     <p className="text-2xl font-playfair z-10 text-center md:text-start">
                         Full Stack Software Engineer
                     </p>
-                    <div className="mt-5">
-                        <LineGradient width="w-2/3" />
+                    <div className="mt-5 flex justify-center md:justify-start">
+                        <LineGradient width="w-1/2" />
                     </div>
 
                     {/* <div className="mx-auto">
@@ -110,15 +110,20 @@ const Landing = ({ setSelectedPage }) => {
                     >
                         Contact Me
                     </AnchorLink>
-                    <AnchorLink
+
+                    <a
                         className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5 pl-0.5"
-                        onClick={() => setSelectedPage("contact")}
-                        href="#contact"
+                        href="https://drive.google.com/file/d/1nUaLeaZkYD5318vkme8EzcqPAzf3j3NK/view?usp=sharing"
+                        target="_blank"
+                        rel="noreferrer"
+
                     >
-                        <div className="bg-deep-blue hover:text-red hover:duration-200 hover:bg-white transition duration-500 w-full h-full flex items-center justify-center px-10">
+                        <div className="bg-deep-blue hover:text-red hover:duration-200 hover:bg-white transition duration-500 w-full h-full flex items-center justify-center px-10 rounded">
                             Resume
                         </div>
-                    </AnchorLink>
+                    </a>
+
+
                 </motion.div>
 
                 <motion.div

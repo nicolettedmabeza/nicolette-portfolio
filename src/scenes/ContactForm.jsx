@@ -19,7 +19,7 @@ const ContactForm = () => {
     };
 
     return (
-        <section id="contact" className="contact py-48">
+        <section id="contact" className="contact py-20">
             {/* HEADINGS */}
             <motion.div
                 initial="hidden"
@@ -141,26 +141,26 @@ const ContactForm = () => {
                                     "Max length is 2000 char."}
                             </p>
                         )}
-                        <div className="flex flex-row space-x-6">
+                        <div className="flex space-x-6 justify-center">
                             <div className="basis-1/2">
                                 <div className="text-center">
                                     <button
                                         onClick={onSubmit}
-                                        className="w-full content-end py-5 px-2 bg-gradient-red rounded-lg font-semibold text-deep-blue mt-5 hover:bg-gradient-rainblue hover:text-white transition duration-500"
+                                        className="w-full py-3 px-1 bg-gradient-red rounded-lg font-semibold text-deep-blue mt-5 mb-5 hover:bg-gradient-rainblue hover:text-white transition duration-500"
                                         type="submit"
                                     >
-                                        SEND THIS MESSAGE
+                                        SUBMIT FORM
                                     </button>
                                 </div>
                             </div>
-                            <div className="basis-1/2">
-                                <div className="text-center">
+                            <div className="basis-1/2 h-full">
+                                <div className="text-center h-full">
                                     <button
-                                        onClick={() => window.location = 'mailto:nmabeza@gmail.clm'}
-                                        className="w-full py-5 px-2 bg-white rounded-lg font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+                                        onClick={() => window.location = 'mailto:nmabeza@gmail.com'}
+                                        className="w-full py-3 px-1 bg-white rounded-lg font-semibold text-deep-blue mt-5 mb-5 hover:bg-red hover:text-white transition duration-500"
                                         type="submit"
                                     >
-                                        EMAIL INSTEAD
+                                        SEND AN EMAIL
                                     </button>
                                 </div>
                             </div>

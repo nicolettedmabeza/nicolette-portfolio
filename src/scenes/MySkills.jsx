@@ -14,16 +14,16 @@ const MySkills = () => {
         superLargeDesktop: {
             // the naming can be any, depends on you.
             breakpoint: { max: 4000, min: 3000 },
-            items: 5
+            items: 8
         },
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 3,
+            items: 5,
             slidesToSlide: 3 // optional, default to 1.
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
-            items: 2,
+            items: 3,
             slidesToSlide: 2 // optional, default to 1.
         },
         mobile: {
@@ -57,8 +57,7 @@ const MySkills = () => {
                     </div>
 
                     <p className="mt-10 mb-7">
-                        Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-                        fames odio in at.
+                        Technology is constantly evolving, and as a software engineer, I am constantly excited to learn and grow with it. There is always something new to discover and master, whether it's a brand new programming language or a framework. I am excited to keep growing as a software engineer and adding more skills to my skillset."
                     </p>
                 </motion.div>
 
@@ -84,73 +83,87 @@ const MySkills = () => {
                 {/* EXPERIENCE */}
                 <div className="w-full relative h-32">
                     <Carousel
-                        containerClass="container-with-dots"
+                        containerClass="container-with-dots z-0"
                         infinite={true}
                         responsive={responsive}
                     >
-                        <div>
-                            < SiJavascript size={100} className="max-w-[100px] mx-auto transform transition duration-500 hover:scale-110 py-3" style={{ color: "white" }} />
-                            {/* <img src="assets/profile.png" alt="Image" className="max-w-[100px] mx-auto" /> */}
-                            <div className="flex justify-center">
-                                <h5 className="text-center">JavaScript</h5>
+                        <div className="flex flex-row justify-center">
+                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800">
+                                < SiJavascript size={100} className="max-w-[100px] mx-auto transform transition duration-500 hover:scale-110 py-3" style={{ color: "white" }} />
+                                <div className="flex justify-center">
+                                    <h5 className="text-center p-1">JavaScript</h5>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            < FaPython size={100} className="max-w-[100px] mx-auto transform transition duration-500 hover:scale-110 py-1" style={{ color: "white" }} />
-                            {/* <img src="assets/profile.png" alt="Image" className="max-w-[100px] mx-auto" /> */}
-                            <div className="flex justify-center">
-                                <h5 className="text-center">Python</h5>
+                        <div className="flex flex-row justify-center">
+                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800">
+                                < FaPython size={100} className="max-w-[100px] mx-auto transform transition duration-500 hover:scale-110 py-1" style={{ color: "white" }} />
+                                <div className="flex justify-center">
+                                    <h5 className="text-center p-1">Python</h5>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            < FaHtml5 size={100} className="max-w-[100px] mx-auto transform transition duration-500 hover:scale-110 py-1" style={{ color: "white" }} />
-                            {/* <img src="assets/profile.png" alt="Image" className="max-w-[100px] mx-auto" /> */}
-                            <div className="flex justify-center">
-                                <h5 className="text-center">HTML</h5>
+                        <div className="flex flex-row justify-center">
+                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800">
+                                < FaHtml5 size={100} className="max-w-[100px] mx-auto transform transition duration-500 hover:scale-110 py-1" style={{ color: "white" }} />
+                                <div className="flex justify-center">
+                                    <h5 className="text-center p-1">HTML</h5>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            < FaCss3Alt size={100} className="max-w-[100px] mx-auto transform transition duration-500 hover:scale-110 py-1" style={{ color: "white" }} />
-                            {/* <img src="assets/profile.png" alt="Image" className="max-w-[100px] mx-auto" /> */}
-                            <div className="flex justify-center">
-                                <h5 className="text-center">CSS</h5>
+                        <div className="flex flex-row justify-center">
+                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800">
+                                < FaCss3Alt size={100} className="max-w-[100px] mx-auto transform transition duration-500 hover:scale-110 py-1" style={{ color: "white" }} />
+
+                                <div className="flex justify-center">
+                                    <h5 className="text-center p-1">CSS</h5>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            < FaReact size={100} className="max-w-[100px] mx-auto transform transition duration-500 hover:scale-110 py-2" style={{ color: "white" }} />
-                            {/* <img src="assets/profile.png" alt="Image" className="max-w-[100px] mx-auto" /> */}
-                            <div className="flex justify-center">
-                                <h5 className="text-center">React.js</h5>
+                        <div className="flex flex-row justify-center">
+                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800">
+                                < FaReact size={100} className="max-w-[100px] mx-auto transform transition duration-500 hover:scale-110 py-2" style={{ color: "white" }} />
+
+                                <div className="flex justify-center">
+                                    <h5 className="text-center p-1">React.js</h5>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            < SiDjango size={100} className="max-w-[100px mx-auto transform transition duration-500 hover:scale-110 py-3" style={{ color: "white" }} />
-                            {/* <img src="assets/profile.png" alt="Image" className="max-w-[100px] mx-auto" /> */}
-                            <div className="flex justify-center">
-                                <h5 className="text-center">Django</h5>
+                        <div className="flex flex-row justify-center">
+                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800">
+                                < SiDjango size={100} className="max-w-[100px mx-auto transform transition duration-500 hover:scale-110 py-3" style={{ color: "white" }} />
+
+                                <div className="flex justify-center">
+                                    <h5 className="text-center p-1">Django</h5>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            < SiFastapi size={100} className="max-w-[100px] mx-auto transform transition duration-500 hover:scale-110 py-3" style={{ color: "white" }} />
-                            <div className="flex justify-center">
-                                <h5 className="text-center">FastAPI</h5>
+                        <div className="flex flex-row justify-center">
+                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800">
+                                < SiFastapi size={100} className="max-w-[100px] mx-auto transform transition duration-500 hover:scale-110 py-3" style={{ color: "white" }} />
+                                <div className="flex justify-center">
+                                    <h5 className="text-center p-1">FastAPI</h5>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            < FaDocker size={100} className="max-w-[100px] mx-auto transform transition duration-500 hover:scale-110" style={{ color: "white" }} />
-                            {/* <img src="assets/profile.png" alt="Image" className="max-w-[100px] mx-auto" /> */}
-                            <div className="flex justify-center">
-                                <h5 className="text-center">Docker</h5>
+                        <div className="flex flex-row justify-center">
+                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800">
+                                < FaDocker size={100} className="max-w-[100px] mx-auto transform transition duration-500 hover:scale-110 p-3" style={{ color: "white" }} />
+                                <div className="flex justify-center">
+                                    <h5 className="text-center p-1">Docker</h5>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            < DiPostgresql
-                                size={100}
-                                className="max-w-[100px] mx-auto transform transition duration-500 hover:scale-110"
-                                // onMouseOver={({ target }) => target.style.color = 'white'}
-                                style={{ color: "white" }} />
-                            <div className="flex justify-center">
-                                <h5 className="text-center">PostgreSQL</h5>
+                        <div className="flex flex-row justify-center">
+                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800">
+                                < DiPostgresql
+                                    size={100}
+                                    className="max-w-[100px] mx-auto transform transition duration-500 hover:scale-110"
+                                    // onMouseOver={({ target }) => target.style.color = 'white'}
+                                    style={{ color: "white" }} />
+                                <div className="flex justify-center">
+                                    <h5 className="text-center p-1">PostgreSQL</h5>
+                                </div>
                             </div>
                         </div>
                     </Carousel>

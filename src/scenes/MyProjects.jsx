@@ -15,25 +15,28 @@ const projectVariant = {
     visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, description }) => {
-    ;
+const Project = ({ title, description, link }) => {
+
     // const projectTitle = title.split(" ").join("-").toLowerCase();
 
     return (
         <motion.div variants={projectVariant} className="relative">
-
-            <div className="p-10">
-                <div className="group relative">
-                    <img className="w-full object-cover"
-                        src="./assets/profile.png" />
-                    <div
-                        className="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-indigo-700 opacity-0 group-hover:h-full group-hover:opacity-80 duration-500">
-                        <h1 className="text-2xl text-white font-playfair">{title}</h1>
-                        <p className="text-white font-playfair">{description}</p>
+            < a
+                href={link}
+                target="_blank"
+            >
+                <div className="p-5">
+                    <div className="group relative">
+                        <img className="max-h-[400px] w-full object-cover"
+                            src="./assets/profile.png" />
+                        <div
+                            className="rounded absolute top-0 left-0 w-full px-2 h-0 flex flex-col justify-center items-center bg-indigo-700 opacity-0 group-hover:h-full group-hover:opacity-80 duration-500">
+                            <h1 className="text-2xl text-white font-playfair">{title}</h1>
+                            <p className="text-white text-center font-playfair">{description}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            {/* <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} /> */}
+            </a>
         </motion.div>
     );
 };
@@ -41,7 +44,7 @@ const Project = ({ title, description }) => {
 const Projects = () => {
     return (
 
-        <section id="projects" className="pt-48 pb-48">
+        <section id="projects" className="pt-20 pb-20">
             {/* HEADINGS */}
             <motion.div
                 className="md:w-2/5 mx-auto text-center"
@@ -80,12 +83,15 @@ const Projects = () => {
                 >
                     {/* ROW 1 */}
                     <Project
-                        title="Project 0"
-                        description="Project 0" />
-                    <Project title="Project 1"
-                        description="Project 0" />
-                    <Project title="Project 2"
-                        description="Project 0" />
+                        title="Concerto"
+                        description="Find concerts and discover music in your area."
+                        link="https://github.com/nicolettedmabeza/concerto" />
+                    <Project title="Auto Aid"
+                        description="Manage car inventory,service appointments and salesperson outcomes on one site. "
+                        link="https://github.com/nicolettedmabeza/auto-aid" />
+                    <Project title="Summit Solutions"
+                        description=""
+                        link="https://github.com/nicolettedmabeza/summit-solutions" />
 
                 </motion.div>
             </div>
