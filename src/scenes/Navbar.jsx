@@ -146,7 +146,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <FaLinkedin size={26} />
+                                    <FaLinkedin size={26} style={{ color: "white" }} />
 
                                 </a>
                             </li>
@@ -157,7 +157,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <FaGithub size={26} />
+                                    <FaGithub size={26} style={{ color: "white" }} />
 
                                 </a>
                             </li>
