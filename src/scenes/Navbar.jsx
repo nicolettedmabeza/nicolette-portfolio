@@ -109,7 +109,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
                 {/* MOBILE NAV */}
                 {isMenuToggled && (
-                    <div id="dropdownNavbar" className="md:hidden fixed top-14 z-50 right-0 font-normal divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                    <div id="dropdownNavbar" className="md:hidden fixed top-14 z-50 right-0 font-normal divide-y rounded shadow w-44 bg-gray-700 divide-gray-600">
                         <ul className="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                             <li>
                                 <Mobile
