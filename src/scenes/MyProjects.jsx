@@ -31,7 +31,7 @@ const Project = ({ title, description, link, photo }) => {
                         <img className="rounded h-[300px] w-full object-cover"
                             src={photo} alt={title} />
                         <div
-                            className="rounded absolute top-0 left-0 w-full px-2 h-0 flex flex-col justify-center items-center bg-indigo-700 opacity-0 group-hover:h-full group-hover:opacity-80 duration-500">
+                            className="rounded absolute top-0 left-0 w-full px-2 h-full md:h-0 flex flex-col justify-center items-center bg-indigo-700 opacity-80 md:opacity-0 group-hover:h-full group-hover:opacity-80 duration-500">
                             <h1 className="text-2xl text-white font-semibold ">{title}</h1>
                             <p className="text-white text-center ">{description}</p>
                         </div>
