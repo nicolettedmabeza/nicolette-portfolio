@@ -1,12 +1,10 @@
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { useState } from "react";
 import LineGradient from "../components/LineGradient";
 
 const Landing = ({ setSelectedPage }) => {
     const isAboveLarge = useMediaQuery("(min-width: 1060px)");
-    const [showImage, setShowImage] = useState(false);
     return (
         <section
             id="home"

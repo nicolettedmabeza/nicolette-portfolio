@@ -1,6 +1,5 @@
 import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import useMediaQuery from "../hooks/useMediaQuery";
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
