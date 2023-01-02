@@ -15,7 +15,7 @@ const projectVariant = {
     visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, description, link }) => {
+const Project = ({ title, description, link, photo }) => {
 
     // const projectTitle = title.split(" ").join("-").toLowerCase();
 
@@ -27,12 +27,12 @@ const Project = ({ title, description, link }) => {
             >
                 <div className="p-5">
                     <div className="group relative">
-                        <img className="max-h-[400px] w-full object-cover"
-                            src="./assets/profile.png" />
+                        <img className="rounded h-[300px] w-full object-cover"
+                            src={photo} />
                         <div
                             className="rounded absolute top-0 left-0 w-full px-2 h-0 flex flex-col justify-center items-center bg-indigo-700 opacity-0 group-hover:h-full group-hover:opacity-80 duration-500">
-                            <h1 className="text-2xl text-white font-playfair">{title}</h1>
-                            <p className="text-white text-center font-playfair">{description}</p>
+                            <h1 className="text-2xl text-white font-semibold ">{title}</h1>
+                            <p className="text-white text-center ">{description}</p>
                         </div>
                     </div>
                 </div>
@@ -65,11 +65,9 @@ const Projects = () => {
                         <LineGradient width="w-2/3" />
                     </div>
                 </div>
-                <p className="mt-10 mb-10">
-                    Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-                    fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-                    purus nec eget eleifend ut elit.
-                </p>
+                <div className="mt-10 mb-10 text-lg">
+                    <h1>Check out what I've been working on!</h1>
+                </div>
             </motion.div>
 
             {/* PROJECTS */}
@@ -84,14 +82,17 @@ const Projects = () => {
                     {/* ROW 1 */}
                     <Project
                         title="Concerto"
-                        description="Find concerts and discover music in your area."
-                        link="https://github.com/nicolettedmabeza/concerto" />
+                        description="Find concerts and discover music in your area"
+                        link="https://github.com/nicolettedmabeza/concerto"
+                        photo="./assets/concerto.png" />
                     <Project title="Auto Aid"
-                        description="Manage car inventory,service appointments and salesperson outcomes on one site. "
-                        link="https://github.com/nicolettedmabeza/auto-aid" />
+                        description="Your one stop shop for car dealership management"
+                        link="https://github.com/nicolettedmabeza/auto-aid"
+                        photo="./assets/autoaid.png" />
                     <Project title="Summit Solutions"
-                        description=""
-                        link="https://github.com/nicolettedmabeza/summit-solutions" />
+                        description="Attend conferences near you"
+                        link="https://github.com/nicolettedmabeza/summit-solutions"
+                        photo="./assets/summit.png" />
 
                 </motion.div>
             </div>

@@ -38,7 +38,7 @@ const MySkills = () => {
             {/* HEADER AND IMAGE SECTION */}
             <div className="md:flex md:justify-between md:items-center md:gap-16 mt-10">
                 <motion.div
-                    className="md:w-1/3"
+                    className="md:w-1/2"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
@@ -53,11 +53,11 @@ const MySkills = () => {
                         MY <span className="text-red">SKILLS</span>
                     </p>
                     <div className="justify-start my-5">
-                        <LineGradient width="w-1/2" />
+                        <LineGradient width="w-1/4" />
                     </div>
 
-                    <p className="mt-10 mb-7">
-                        Technology is constantly evolving, and as a software engineer, I am constantly excited to learn and grow with it. There is always something new to discover and master, whether it's a brand new programming language or a framework. I am excited to keep growing as a software engineer and adding more skills to my skillset."
+                    <p className="mt-10 mb-7 text-lg">
+                        I have a strong desire to continuously improve and expand my knowledge. Whether it's taking on a new project or learning a different framework, I am eager to take on new challenges and learn as much as I can. I'm excited to keep growing as a software engineer and adding to my skillset!
                     </p>
                 </motion.div>
 
@@ -88,7 +88,7 @@ const MySkills = () => {
                         responsive={responsive}
                     >
                         <div className="flex flex-row justify-center">
-                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800">
+                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800 bg-opacity-75">
                                 < SiJavascript size={100} className="max-w-[100px] mx-auto transform transition duration-500 hover:scale-110 py-3" style={{ color: "white" }} />
                                 <div className="flex justify-center">
                                     <h5 className="text-center p-1">JavaScript</h5>
@@ -96,7 +96,7 @@ const MySkills = () => {
                             </div>
                         </div>
                         <div className="flex flex-row justify-center">
-                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800">
+                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800 bg-opacity-75">
                                 < FaPython size={100} className="max-w-[100px] mx-auto transform transition duration-500 hover:scale-110 py-1" style={{ color: "white" }} />
                                 <div className="flex justify-center">
                                     <h5 className="text-center p-1">Python</h5>
@@ -104,7 +104,7 @@ const MySkills = () => {
                             </div>
                         </div>
                         <div className="flex flex-row justify-center">
-                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800">
+                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800 bg-opacity-75">
                                 < FaHtml5 size={100} className="max-w-[100px] mx-auto transform transition duration-500 hover:scale-110 py-1" style={{ color: "white" }} />
                                 <div className="flex justify-center">
                                     <h5 className="text-center p-1">HTML</h5>
@@ -112,7 +112,7 @@ const MySkills = () => {
                             </div>
                         </div>
                         <div className="flex flex-row justify-center">
-                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800">
+                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800 bg-opacity-75">
                                 < FaCss3Alt size={100} className="max-w-[100px] mx-auto transform transition duration-500 hover:scale-110 py-1" style={{ color: "white" }} />
 
                                 <div className="flex justify-center">
@@ -121,7 +121,7 @@ const MySkills = () => {
                             </div>
                         </div>
                         <div className="flex flex-row justify-center">
-                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800">
+                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800 bg-opacity-75">
                                 < FaReact size={100} className="max-w-[100px] mx-auto transform transition duration-500 hover:scale-110 py-2" style={{ color: "white" }} />
 
                                 <div className="flex justify-center">
@@ -130,7 +130,7 @@ const MySkills = () => {
                             </div>
                         </div>
                         <div className="flex flex-row justify-center">
-                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800">
+                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800 bg-opacity-75">
                                 < SiDjango size={100} className="max-w-[100px mx-auto transform transition duration-500 hover:scale-110 py-3" style={{ color: "white" }} />
 
                                 <div className="flex justify-center">
@@ -139,7 +139,7 @@ const MySkills = () => {
                             </div>
                         </div>
                         <div className="flex flex-row justify-center">
-                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800">
+                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800 bg-opacity-75">
                                 < SiFastapi size={100} className="max-w-[100px] mx-auto transform transition duration-500 hover:scale-110 py-3" style={{ color: "white" }} />
                                 <div className="flex justify-center">
                                     <h5 className="text-center p-1">FastAPI</h5>
@@ -147,7 +147,7 @@ const MySkills = () => {
                             </div>
                         </div>
                         <div className="flex flex-row justify-center">
-                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800">
+                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800 bg-opacity-75">
                                 < FaDocker size={100} className="max-w-[100px] mx-auto transform transition duration-500 hover:scale-110 p-3" style={{ color: "white" }} />
                                 <div className="flex justify-center">
                                     <h5 className="text-center p-1">Docker</h5>
@@ -155,7 +155,7 @@ const MySkills = () => {
                             </div>
                         </div>
                         <div className="flex flex-row justify-center">
-                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800">
+                            <div className="md:w-2/3 sm:1/3 justify-items-center rounded bg-gray-800 bg-opacity-75">
                                 < DiPostgresql
                                     size={100}
                                     className="max-w-[100px] mx-auto transform transition duration-500 hover:scale-110"

@@ -11,6 +11,7 @@ module.exports = {
         yellow: "#FDCC49",
         grey: "#ededed",
         "dark-grey": "#757575",
+        purple: "#4D347D",
         "opaque-black": "rgba(0,0,0,0.35)",
         "blue-ish": "#824EA3",
         "gradient": "linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%)",

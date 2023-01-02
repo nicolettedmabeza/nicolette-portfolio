@@ -146,7 +146,7 @@ const ContactForm = () => {
                                 <div className="text-center">
                                     <button
                                         onClick={onSubmit}
-                                        className="w-full py-3 px-1 bg-gradient-red rounded-lg font-semibold text-deep-blue mt-5 mb-5 hover:bg-gradient-rainblue hover:text-white transition duration-500"
+                                        className="w-full py-3 px-1 bg-gradient-rainblue rounded-lg font-semibold text-deep-blue mt-5 mb-5 hover:bg-gradient-red hover:text-white transition duration-500"
                                         type="submit"
                                     >
                                         SUBMIT FORM

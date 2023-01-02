@@ -8,7 +8,6 @@ import LineGradient from "./components/LineGradient";
 import MySkills from "./scenes/MySkills";
 import MyProjects from "./scenes/MyProjects";
 import ContactForm from "./scenes/ContactForm";
-import Footer from "./scenes/Footer";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -79,7 +78,6 @@ function App() {
           <ContactForm />
         </motion.div>
       </div>
-      < Footer />
     </div >
   );
 }

@@ -10,7 +10,7 @@ const Landing = ({ setSelectedPage }) => {
     return (
         <section
             id="home"
-            className="md:flex md:justify-between md:items-center md:h-full py-100 pb-16"
+            className="md:flex md:justify-between md:items-center md:h-full py-5"
         >
             {/* IMAGE SECTION */}
             <div className="basis-3/5 z-10 mt-20 md:mt-20 flex justify-center md:order-2">
@@ -64,8 +64,8 @@ const Landing = ({ setSelectedPage }) => {
                     }}
                 >
 
-                    <p className="text-2xl font-playfair z-10 text-center md:text-start">
-                        Full Stack Software Engineer
+                    <p className="text-2xl  z-10 text-center md:text-start font-playfair">
+                        FULL STACK SOFTWARE ENGINEER
                     </p>
                     <div className="mt-5 flex justify-center md:justify-start">
                         <LineGradient width="w-1/2" />
@@ -85,7 +85,7 @@ const Landing = ({ setSelectedPage }) => {
                         visible: { opacity: 1, x: 0 },
                     }}
                 >
-                    <p className="text-center mt-8 mb-7 text-sm md:text-left">
+                    <p className="text-center mt-8 mb-7 text-lg md:text-left">
                         As a software engineer, I am driven by my love for solving problems and my desire to make a positive impact through technology. Before transitioning to this field, I worked as a nurse for several years, where I honed my critical thinking skills and developed a dedication to helping others. I am a collaborative team player and thrive in environments where I can work with others to find innovative solutions to complex problems. Leveraging my passion for learning and problem solving has led me to a career in software engineering, where I am constantly faced with new challenges and opportunities to learn and grow.
                     </p>
                 </motion.div>
@@ -103,7 +103,7 @@ const Landing = ({ setSelectedPage }) => {
                     }}
                 >
                     <AnchorLink
-                        className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
+                        className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold text-center
               hover:bg-gradient-red hover:text-white hover:duration-200 transition duration-500 mr-5 shadow-lg"
                         onClick={() => setSelectedPage("contact")}
                         href="#contact"
@@ -113,12 +113,12 @@ const Landing = ({ setSelectedPage }) => {
 
                     <a
                         className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5 pl-0.5"
-                        href="https://drive.google.com/file/d/1nUaLeaZkYD5318vkme8EzcqPAzf3j3NK/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1HzEbmgIAT7tnJTmVyZc-gxPJoLJjbS7r/view?usp=sharing"
                         target="_blank"
                         rel="noreferrer"
 
                     >
-                        <div className="bg-deep-blue hover:text-red hover:duration-200 hover:bg-white transition duration-500 w-full h-full flex items-center justify-center px-10 rounded">
+                        <div className="bg-deep-blue hover:text-red hover:duration-200 hover:bg-white transition duration-500 w-full h-full flex items-center justify-center px-10 rounded font-semibold">
                             Resume
                         </div>
                     </a>
