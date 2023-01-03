@@ -45,7 +45,7 @@ const Project = ({ title, description, link, photo }) => {
 const Projects = () => {
     return (
 
-        <section id="projects" className="pt-20 pb-20">
+        <section id="projects" className="py-40">
             {/* HEADINGS */}
             <motion.div
                 className="md:w-2/5 mx-auto text-center"

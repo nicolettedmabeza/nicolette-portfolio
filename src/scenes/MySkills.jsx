@@ -34,7 +34,7 @@ const MySkills = () => {
     };
 
     return (
-        <section id="skills" className="pt-10 pb-24">
+        <section id="skills" className="pt-20 pb-40">
             {/* HEADER AND IMAGE SECTION */}
             <div className="md:flex md:justify-between md:items-center md:gap-16 mt-10">
                 <motion.div
