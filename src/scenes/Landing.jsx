@@ -111,7 +111,7 @@ const Landing = ({ setSelectedPage }) => {
 
                     <a
                         className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5 pl-0.5"
-                        href="https://drive.google.com/file/d/1HzEbmgIAT7tnJTmVyZc-gxPJoLJjbS7r/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1cgvL8MyXNaB3kJb29sqLKst02sF-YDhS/view"
                         target="_blank"
                         rel="noreferrer"
 
